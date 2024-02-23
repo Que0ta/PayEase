@@ -208,9 +208,12 @@
 
 .graysc{
     filter: grayscale(100%);
+<<<<<<< HEAD
 }
 
 .txt_al{
     margin-right: 5em !important;
     margin-left: 5em !important;
+=======
+>>>>>>> 78886565f01fb6e80a80e9b552b31eb5a1432bb6
 }
