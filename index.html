@@ -11,18 +11,19 @@
   <body>
 
     <!-- Navigation -->
-    <div class="container">
+    <!-- <div class="container">
       <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-3 ">
-        <div class="col-md-3 mb-2 mb-md-0">
-          <a href="/" class="fs-2 link-body-emphasis text-decoration-none">
-              <div class="logo mx-0 mt-1">
-                  <div class="square"></div>
-                  <div class="circle"></div>
-              </div> 
-              PayEase
-          </a>
-        </div>
-  
+        <div class="logo">
+          <div class="col-md-3 mb-2 mb-md-0">
+            <a href="/" class="fs-2 link-body-emphasis text-decoration-none">
+                <div class="logo mx-0 mt-1">
+                    <div class="square"></div>
+                    <div class="circle"></div>
+                </div> 
+                PayEase
+            </a>
+          </div>
+        </div>  
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
           <li><a href="#" class="nav-link px-2 t_nav">Home</a></li>
           <li><a href="#" class="nav-link px-2 t_nav">About</a></li>
@@ -36,13 +37,43 @@
           <button type="button" class="btn btn-outline-dark bg px-3">Sign-up</button>
         </div>
       </header>
-    </div>
+    </div> -->
+    <!-- New nav -->
+    <nav class="container-fluid navbar navbar-expand-lg bg-body-tertiary px-4 py-2">
+      <div class="container-fluid mx-2">
+          <div class="logo_m col-md-3 mb-2 mb-md-0">
+              <div class="logo inter mx-0 mt-1">
+                  <div class="square"></div>
+                  <div class="circle"></div>
+              </div> 
+              <a href="/" class="mx-2 fs-2 link-body-emphasis text-decoration-none">PayEase</a>
+              
+            </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="contain collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navigation_center navbar-nav">
+                  <a class="nav-link t_nav text-black fs-5" aria-current="page" href="#">Home</a>
+                  <a class="nav-link t_nav text-black fs-5" href="#">About</a>
+                  <a class="nav-link t_nav text-black fs-5" href="#">Pricing</a>
+                  <a href="#" class="nav-link t_nav text-black fs-5">FAQs</a>
+                  <a href="#" class="nav-link t_nav text-black fs-5">Contact</a>
+              </div>
+              <div class="log my-3">
+                  <button type="button" class="btn border btn-outline-dark bg_2 px-3 fs-5" href="#">Log in</button type="button">
+                  <button type="button" class=" btn btn-outline-dark px-3 main_b text-white fs-5" href="#">Sign up</button>
+              </div>
+          </div>
+      </div>
+    </nav>
     <!-- Main -->
     <div class="container col-xxl-8 px-2 py-5">
       <div class="row flex-lg-row align-items-center g-5 py-5 ">
         <div class="col-10 col-sm-8 col-lg-6 painting1">
           <img src="./img/girl_laptop_try.png" class="mb-4 d-block mx-lg-auto mx-sm-auto img-fluid imgy" alt="Bootstrap Themes" width="400" height="400" loading="lazy">
           <div class="ro_circle"></div>
+          <div class="bg_circle"></div>
       </div>
         <div class="col-lg-6 m-0">
           <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 my-5">The fastest way to <span class="txt">payment</span></h1>
@@ -69,11 +100,11 @@
     <!-- Move on with main -- submain -->
     <section id="submain" class="">
       <!-- setup -->
-      <div class="container-fluid py-3 my-5 bg-body-tertiary">
-        <div class="p-5 text-center rounded-3">
+      <div class="container py-3 my-5 bg-body-tertiary">
+        <div class="p-5 text-center rounded-3 mx-4">
           <p class="fw-bold fs-5"> <img class="mb-1" src="./img/credit-card-fill.svg" width="20"/> Set Up</p>
           <h2 class="text-body-emphasis "><span class="txt">How To Use</span></h2>
-          <p class="col-lg-8 mx-auto fs-5 text-muted">
+          <p class="col-lg-8 mx-auto fs-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas vel eros tempus euismod. Fusce pellentesque, nisi vel viverra molestie, sapien quam imperdiet leo, a aliquet tellus augue a neque.
           </p>
         </div>
@@ -121,8 +152,8 @@
             <p class="fw-bold fs-5"> <img class="mb-1" src="./img/briefcase-fill.svg" width="20"/> Partners   <!--<div class="lime"></div>--> </p>
           </div>
           <h2 class="text-body-emphasis "><span class="txt">They're Working With Us</span></h2>
-          <div class="container-fluid partner my-4">
-            <div class="row">
+          <div class="container-fluid partner my-4" id="scrollyContainer">
+            <div class="row" id="scrolly">
               <div class="col-lg-2 col-md-4 col-sm-6 my-auto">
                 <img class="imagy graysc" src="./img/paypal.png"/>
               </div>
@@ -147,8 +178,109 @@
       </div>
     </section>
     <!-- 2nd page -->
+    <section class="provide ">
+      <div class="container py-3 my-5 bgy">
+        <div class="p-5 text-center rounded-3 mx-4">
+          <p class="fw-bold fs-5"> <img class="mb-1 mx-1 logyy" src="./img/provide.svg" width="20"/>Services</p>
+          <h2 class="text-body-emphasis "><span class="txt">What we provide?</span></h2>
+          <p class="col-lg-8 mx-auto fs-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas vel eros tempus euismod. Fusce pellentesque, nisi vel viverra molestie, sapien quam imperdiet leo, a aliquet tellus augue a neque.
+          </p>
+          <!-- <table class="containy">
+            <tr class="containy_gaps">
+              <td class="element txt">Payment processing</td>
+              <td class="element txt">Gateway services</td>
+            </tr>
+            <tr class="containy_gaps">
+              <td class="unique txt">Savings guide</td>
+              <td class="element txt">Investment guide</td>
+            </tr>
+            <tr class="containy_gaps">
+              <td class="element txt">Merchant account</td>
+              <td class="element txt">Currency conversion</td>
+            </tr>
+          </table> -->
+          <div class="containy text-center">
+            <div class="row rowy">
+              <div class="col-lg-4 col-md-5 col-sm-6 col-xs-10 element one txt">Payment processing</div>
+              <div class="col-lg-4 col-md-5 col-sm-6 col-xs-10 element two txt">Gateway services</div>
+              <div class="col-lg-4 col-md-5 col-sm-6 col-xs-10 element three unique txt">Savings guide</div>
+              <div class="col-lg-4 col-md-5 col-sm-6 col-xs-10 element four txt">Investment guide</div>
+              <div class="col-lg-4 col-md-5 col-sm-6 col-xs-10 element five txt">Merchant account</div>
+              <div class="col-lg-4 col-md-5 col-sm-6 col-xs-10 element six txt">Currency conversion</div>
+            </div>
+          </div>
 
+        </div>
 
+      </div>
+    </section>
+    <!-- Features -->
+    <div class="container-fluid py-3 my-5 bg-body-tertiary">
+      <div class="p-5 text-center rounded-3 mx-4">
+        
+        <p class="fw-bold fs-5"><img class="mb-1 mx-1 logyy" src="./img/features.svg" width="20"/> Features</p>
+        <h2 class="text-body-emphasis "><span class="txt">Why we are different?</span></h2>
+        <p class="col-lg-8 mx-auto fs-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas vel eros tempus euismod. Fusce pellentesque, nisi vel viverra molestie, sapien quam imperdiet leo, a aliquet tellus augue a neque.
+        </p>
+      </div>
+
+      <div class="container px-4 py-1" id="icon-grid">
+    
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 py-5">
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
+            <div class="rela">
+              <img class="mb-1 mx-1 logyy pos" src="./img/features_check.svg " width="20"/>
+              <h3 class="fw-bold mb-0 fs-4 txt text-body-emphasis">Quick withdrawal</h3>
+              <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
+            <div class="rela">
+              <img class="mb-1 mx-1 logyy pos" src="./img/features_check.svg " width="20"/>
+              <h3 class="fw-bold mb-0 fs-4 txt text-body-emphasis">Profitable investment</h3>
+              <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg>
+            <div class="rela">
+              <img class="mb-1 mx-1 logyy pos" src="./img/features_check.svg " width="20"/>
+              <h3 class="fw-bold mb-0 fs-4 txt text-body-emphasis">Safe savings</h3>
+              <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg>
+            <div class="rela">
+              <img class="mb-1 mx-1 logyy pos" src="./img/features_check.svg " width="20"/>
+              <h3 class="fw-bold mb-0 fs-4 txt text-body-emphasis">Convert currency</h3>
+              <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"></use></svg>
+            <div class="rela">
+              <img class="mb-1 mx-1 logyy pos" src="./img/features_check.svg " width="20"/>
+              <h3 class="fw-bold mb-0 fs-4 txt text-body-emphasis">Strong security</h3>
+              <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg>
+            <div class="rela">
+              <img class="mb-1 mx-1 logyy pos" src="./img/features_check.svg " width="20"/>
+              <h3 class="fw-bold mb-0 fs-4 txt text-body-emphasis">Easy to use</h3>
+              <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 
   </body>
 </html>
